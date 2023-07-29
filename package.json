@@ -1,0 +1,27 @@
+{
+  "name": "swgoh-stats",
+  "version": "1.1.1",
+  "description": "A Node app for calculating unit stats in EA's Star Wars Galaxy of Heroes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "chmod a+x updategitdependency.sh && ./updategitdependency.sh",
+    "build": "chmod a+x buildtestimage.sh && ./buildtestimage.sh c3pobot-old/swgoh-stats",
+    "prod": "chmod a+x buildprodimage.sh && ./buildprodimage.sh c3pobot-old/swgoh-stats"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "express": "^4.18.1",
+    "mongoapiclient": "github:c3pobot/mongoapiclient",
+    "swgoh-stat-calc": "github:scuba75/swgoh-stat-calc"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:c3po-shard/swgoh-stats.git"
+  },
+  "license": "MIT"
+}
